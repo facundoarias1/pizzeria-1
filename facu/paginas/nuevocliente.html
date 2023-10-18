@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body >
+             <header>
+                      <nav class="menu st">
+                        <ul>
+                            <li class="menu_iten"><a href="./inicio.html">principal</a></li>
+                            <li class="menu_iten"><a href="../index.html" class="inicio">inicio</a></li>
+                            <li class="menu_iten"><a href="contacto.html" class="contacto">contactanos</a></li>
+                            <li class="menu_iten "><a href="catalogo.html" class="contacto">catalogo</a></li>
+                            <li class="menu_iten active"><a href="./nuevocliente.html " >nuevo cliente</a></li>
+                           </ul>     
+                      </nav>
+                    </header>
+
+                    <main>
+                      <h1 class="fac">NUEVO cliente</h1>
+                    </main>
+
+      <form class="cliente" >
+        <h2>ingrese sus datos para su nuevo pedido</h2>
+        <div class="porotos">
+        <label for="nombre">nombre</label> <input type="text" name="nombre" required placeholder="nombre">
+    </div>
+    <div class="porotos">
+        <label for="apellido">apellido</label><input type="text" name="apellido" required placeholder="apellido">
+    </div>
+    <div class="porotos">
+        <label for="email">email</label><input type="email" name="email" required placeholder="email">
+    </div>
+    <div class="porotos">
+        <label for="comentarios">ingrese un comentario</label><br><textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="escribe tu comentario"></textarea>
+    </div >
+    <div class="porotos">
+        <label for="telefono">ingrese su telefono</label><input type="text" name="telefono" required placeholder="numero de telefono">
+    </div>
+    <div class="porotos">
+        <label for="direccion">ingrese a donde llegara su pedido</label><input type="text" name="direccion" required placeholder="direccion">
+    </div>
+ <label for="">forma de pago    </label>
+<div >
+
+    <label for="plata"></label>efectivo<input type="radio" id="plata" name="efectivo">
+</div>
+
+<div >
+  
+    <label for="tarjeta"></label> tarjeta<input type="radio" id="tarjeta" name="efectivo">
+</div>
+<div class="porotos">
+    <input type="submit" name="enviar" class="porotoss">
+</div>
+      </form>    
+      
+      <footer>
+        <span class="copyright">&copy; 2023,facundo arias.all righst reserverd.</span>
+      </footer>
+
+</body>
+</html>

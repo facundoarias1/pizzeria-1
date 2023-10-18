@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Dancing+Script & display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+    font-family: 'Bebas Neue', sans-serif;
+}
+/*los h1 al h6*/
+.h2{ 
+color: aqua;
+
+}
+
+/*botones de contacto*/
+.botones{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+}
+.botones ol{
+    text-decoration-style: none;
+}
+
+.botones ol li{
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid white;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+/* inicio*/
+.seal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    " logo  logo contacto nuevo-cliente  "
+    " logo   logo catalogo quienes-somos ";
+    min-height:100vh ;
+   
+}
+
+.logo{
+    background-color: bisque;
+    grid-area: logo ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/joaco.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    color: chartreuse;
+    
+}
+
+.con1{
+    background-color: blue;
+    grid-area: contacto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-image: url(../imagenes/contacto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nuv1{
+    background-color: white;
+    grid-area: nuevo-cliente;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-image: url(../imagenes/nuevocontacto.jpeg);
+    background-repeat: no-repeat;
+background-size: contain;
+}
+.cat1{
+    background-color: yellow;
+    grid-area: catalogo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-image: url(../imagenes/12.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.qui1{
+    background-color: aqua;
+    grid-area: quienes-somos;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-image: url(../imagenes/quienes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seal a{
+    color: rgb(228, 26, 194);
+    font-size: 18px;
+}
+
+
+.item{
+    transition: .35s;
+    cursor: pointer;
+}
+.seal:hover >:not(:hover){
+opacity: .4;
+transform: scale(0.9);
+
+}
+
+
+.item:hover(
+
+)
+
+
+
+
+
+
+/* menu de navegacion*/
+.menu{
+    list-style-type: none;
+    background: rgb(209, 13, 121);
+    padding: 10px;
+ 
+}
+.menu_iten{
+    display: inline;
+    margin: 0px 10px 0px 10px;
+   
+    padding-inline: 50px    ;     
+ }
+ .menu_iten a{
+color: black;
+    text-decoration: none;
+ }
+ .menu_iten.active a{
+    text-decoration: underline double;
+
+ }
+ .menu_iten a:hover{
+    text-decoration: underline double;
+ }
+
+/* menu de navegacion*/
+/* cartias*/
+
+.cat{
+    display: flex;
+    justify-content: space-between;
+  
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr  ;
+grid-template-areas: 
+ "inicio inicio inicio"
+ "pizza1 pizza2 pizza3"                    
+ "pizza4 pizza5 pizza6"
+ "promociones promociones promociones"
+ "pizza7 pizza8 pizza9"     
+;
+height: 100vh;
+
+
+}
+
+.inicio17{
+    grid-area: inicio ;
+    background-color: blue;
+    font-size: 4rem ;
+display: flex;
+justify-content: center;
+align-items: center;
+
+    
+}
+
+.pizza1{
+   grid-area: pizza1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.pizza2{
+   
+    grid-area: pizza2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizza3{
+ 
+    grid-area: pizza3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizza4{
+
+    grid-area: pizza4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizza5{
+
+    grid-area: pizza5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizza6{
+  
+    grid-area: pizza6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prom{
+  font-size: 400px;
+    grid-area: promociones  ;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizza7{
+   
+    grid-area: pizza7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza8{
+  
+    grid-area: pizza8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza9{    
+
+    grid-area: pizza9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizzza{
+    list-style-type: none;
+    list-style-type: "🍕";
+}
+
+.ps5{
+    background-image: url(../imagenes/imagen333.jpg);
+    background-image: cover ;
+}
+
+
+
+/* nuevo cliente*/
+ .fac{
+   text-align: center;
+    color: aqua;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration: underline double red;
+    background: blueviolet;
+
+ }
+ form textarea{
+    width: 100%;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid black;
+ }
+ form{
+    width: 100%;
+ 
+
+ }
+ form input{
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid black;
+ }
+form input::placeholder{
+    color: cadetblue;
+}
+form textarea::placeholder{
+    color: cadetblue;
+}
+.cliente{
+    background-color: blueviolet;
+    width: 100%;
+    min-height: 100vh;
+   
+    padding: 30px;
+    background-image:linear-gradient(rgba(238, 130, 238, 0.7),rgba(128, 0, 128, 0.7)), url(../imagenes/poleta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.porotos input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.porotoss{
+    background-color: pink;
+    font-size: 25px;
+    border: 4px solid black;
+    padding: 10px;
+}
+.st{
+  padding: 20px;
+}
+
+/*contrataciones*/
+.f{
+    background-image: url(../imagenes/fondo2.jpg);
+ 
+}
+
+.contrataciones{
+    text-align: center;
+    font-size: 42px;
+    color: blue;
+    text-decoration: solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cuadro{
+    display: flex;
+   
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 750px;
+background-color: rgb(209, 104, 6);
+border: solid;
+}
+.pochi1{
+    border: 50px;
+  caret-color: aqua;
+}   
+
+footer{
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 2rem 8%;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.social-icons-container,.footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(../imagenes/facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat:no-repeat ;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: blue;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url(../imagenes/google.png);
+}
+.social-icon:nth-of-type(3){
+    background-image: url(../imagenes/instragram.jpg);
+}
+.social-icon:nth-of-type(4){
+    background-image: url(../imagenes/whasap.jpg);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+.menu-item{
+    margin:1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+
+}
+.p12{
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
+
+
+
+ 
+/*index*/
+.cam{
+    background-image: url(../imagenes/pizza.avif);
+    background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+
+.bienvenidos{
+    text-align: center    ;
+    color:white;
+    font-size: 200px ;
+}
+
+.pizzeria1{
+    padding-top: 50px;
+    text-align: center;
+    color:black;
+    font-size: 75px;
+}
+.plo{
+    
+    list-style-type: none;
+    
+   
+   
+}
+.plo li{
+    padding-left: 20px;
+    list-style-type: "💖";
+    text-align: center;
+    font-size: 30px;
+    color: chartreuse;
+}
+.pizzeria2{
+    text-align: center;
+    color: chocolate;
+    padding-top: 20px;
+}
+
+.ploo{
+    
+    width: 300px;
+    padding: 20px;
+    border: solid;
+    border-radius: 50%;
+  
+
+}
+/*media  query inicio*/
+
+
+
+@media (max-width:992px)
+{
+    .seal{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+         "logo logo"
+         "logo logo"
+         "contacto nuevo-cliente"
+         "catalogo quienes-somos"
+         
+         ;
+    }
+}
+
+@media (max-width: 600px){
+    .seal{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo"
+        "contacto"
+        "nuevo-cliente"
+        "catalogo"
+        "quienes-somos ";
+        
+    }
+}
+
+
+@media(max-width:992px){
+    .cat{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        1fr;
+        grid-template-areas: 
+        " inicio inicio"
+        " pizza1 pizza2"
+        "pizza3 pizza4"
+        "pizza5 pizza6"
+        "promociones promociones"
+        "pizza7 pizza8"
+        "pizza9 fin"
+        ;
+    }
+}
+@media(max-width:600px){
+    .cat{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "inicio"
+        "pizza1"
+        "pizza2"
+        "pizza3"
+        "pizza4"
+        "pizza5"
+        "pizza6"
+        "promociones"
+        "pizza7"
+        "pizza8"
+        "pizza9";
+    }
+}
